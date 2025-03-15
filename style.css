@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppies',sans-serif;
+}
+.header{
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.925);
+    padding:35px 30%;
+    display:flex;
+    justify-content: space-between;
+}
+.navbar a{
+    align-items: center;
+    justify-content: space-between;
+    font-size:18px;
+    color:aliceblue;
+    margin: 0 25px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:orangered;
+}
+.home{
+    width:100%;
+    min-height: 100vh;
+    background: white;
+    display:flex;
+    align-items: center;
+    gap:7px;
+    padding: 30px 15% 0;  
+    padding-top: 100px;  
+}
+.home-content{
+    max-width: 650px;
+}
+.home-content h3{
+    font-size: 40px;
+}
+.home-content h3 img{
+    width: 30px;
+    height: 35px;
+    justify-content: space-between;
+}
+.home-content h1{
+    font-size: 32px;
+}
+.home-content p{
+    font-size:18px;
+    margin: 20px 0 30px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-box{
+    width:400px;
+    display:flex;
+    gap: 2px;
+    padding-bottom: 50px;
+
+}
+.btn-1{
+    padding:15px;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+.btn-2{
+    padding:15px;
+    background-color: orangered;
+    color:white;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+span{
+    color:orangered;
+}
+
+.About{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap:10px;
+    background:black;
+    color:white;
+    height: 95vh;
+}
+.About h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 45px;
+}
+.About p{
+    font-size: 24px;
+    padding: 55px;
+}
+.Skills h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:rgb(13, 12, 12);
+    font-size: 45px;
+    padding-top:80px;
+}
+.Skills ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 70px;
+    row-gap: 50px;
+    column-gap: 15%;
+    margin:0px 10%;
+    padding-bottom: 10%;
+}
+.Skills ul li{
+    box-sizing: border-box;
+    width: 15vw;
+    height: 150%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 245, 245);
+    background: rgb(3, 50, 88);
+    color:rgb(248, 244, 244);
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    padding-top: 10px;
+}
+.Skills ul li:hover{
+    background-color: navajowhite;
+    color: rgb(8, 8, 8);
+    border:2px solid black;
+}
+.Skills ul li img{
+    width: 60px;
+    height: 40px;
+    padding-right: 20px;
+}
+.Project h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:rgb(13, 12, 12);
+    font-size: 45px;
+    padding-top:80px;
+    padding-bottom: 50px;
+}
+.Project ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 70px;
+    row-gap: 50px;
+    column-gap: 15%;
+    margin:0px 10%;
+    padding-bottom: 10%;
+}
+.Project ul li{
+    box-sizing: border-box;
+    width: 15vw;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background: rgb(154, 154, 162);
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    padding-top: 15px;
+}
+.Project ul li h6{
+    padding: 5px;
+
+}
+.Project ul li a{
+   font-size: 20px;
+}
+.Project ul li a:hover{
+    color: rgb(13, 120, 13);
+}
+.contact{
+    padding-bottom: 90px;
+}
+.contact h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:rgb(13, 12, 12);
+    font-size: 45px;
+    padding-top:50px;
+    padding-bottom: 70px;
+}
+.contact div h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    display: flex;
+    padding: 10px;
+}
+.contact div h1 input{
+    width: 25%;
+    height: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact div h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+.message{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+    margin-right: 40px;
+}
+.buttons{
+    width:342px;
+    display:flex;
+    gap: 2px;
+    margin-left: 50%;
+    padding-top:25px;
+}
+.btn-3{
+    padding:15px;
+    background-color: rgb(10, 184, 207);
+    color:white;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-3:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+.btn-4{
+    padding:15px;
+    background-color: rgb(18, 18, 19);
+    color:white;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-4:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+.End-part{
+    width:100%;
+    background:rgba(0, 0, 0, 0.925);
+    padding:35px 30%;
+    display:flex;
+    color: white;
+}
+.End-part p{
+    padding-left: 100px;
+    letter-spacing: 1px;
+}
+.End-part p img{
+    height: 50x;
+    width: 30px;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
